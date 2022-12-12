@@ -11,6 +11,10 @@ package Employee;
 public class FireEngine extends Employee {
      private String availability;
 
+     public FireEngine(){
+     this.availability = "Available";
+     }
+     
     public String getAvailability() {
         return availability;
     }
