@@ -142,14 +142,14 @@ public class EmergencySystem extends Organisation{
                 {
                     for(Hospital h:n.getHospitalList())
                     {
-                       userNameIsUnique=h.getUserAccountDirectory().checkIfUsernameIsUnique(username);
+//                       userNameIsUnique=h.getUserAccountDirectory().checkIfUsernameIsUnique(username);
                        if(userNameIsUnique==false)
                         break;
                        else
                        {
                            for(Organisation org:h.getOrganizationDirectory().getOrganisationList())
                            {
-                               userNameIsUnique=org.getUserAccountDirectory().checkIfUsernameIsUnique(username);
+//                               userNameIsUnique=org.getUserAccountDirectory().checkIfUsernameIsUnique(username);
                                if(userNameIsUnique==false)
                                    break;
                            }

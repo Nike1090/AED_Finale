@@ -38,6 +38,7 @@ import Hospital.Role.PoliceAdminRole;
 import Hospital.UserAccount.UserAccount;
 import LicensePlate.LicensePlate;
 import Person.Student;
+import UI.FireDepartment.FireEngineWorkArea;
 
 /**
  *
@@ -226,8 +227,8 @@ public class ConfigureASystem {
                ((FireEngineOrganization)org).getEmployeeDirectory().createEmployee(fe2_n1);
                
                
-               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd37engine1", "bfd37engine1", fe1_n1, new AmbulanceRole());
-               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd37engine2", "bfd37engine2", fe2_n1, new AmbulanceRole());
+               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd37engine1", "bfd37engine1", fe1_n1, new FireEngineRole());
+               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd37engine2", "bfd37engine2", fe2_n1, new FireEngineRole());
                
 
            }
@@ -241,8 +242,8 @@ public class ConfigureASystem {
                ((FireEngineOrganization)org).getEmployeeDirectory().createEmployee(fe4_n1);
                
                
-               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd42engine1", "bfd42engine1", fe3_n1, new AmbulanceRole());
-               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd42engine2", "bfd42engine2", fe4_n1, new AmbulanceRole());
+               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd42engine1", "bfd42engine1", fe3_n1, new FireEngineRole());
+               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd42engine2", "bfd42engine2", fe4_n1, new FireEngineRole());
                
 
            }
@@ -757,8 +758,8 @@ public class ConfigureASystem {
                ((FireEngineOrganization)org).getEmployeeDirectory().createEmployee(fe2_n2);
                
                
-               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd5engine1", "bfd5engine1", fe1_n2, new AmbulanceRole());
-               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd5engine2", "bfd5engine2", fe2_n2, new AmbulanceRole());
+               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd5engine1", "bfd5engine1", fe1_n2, new FireEngineRole());
+               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd5engine2", "bfd5engine2", fe2_n2, new FireEngineRole());
                
 
            }
@@ -773,8 +774,8 @@ public class ConfigureASystem {
                ((FireEngineOrganization)org).getEmployeeDirectory().createEmployee(fe4_n2);
                
                
-               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd7engine1", "bfd7engine1", fe3_n2, new AmbulanceRole());
-               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd7engine2", "bfd7engine2", fe4_n2, new AmbulanceRole());
+               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd7engine1", "bfd7engine1", fe3_n2, new FireEngineRole());
+               ((FireEngineOrganization)org).getUserAccountDirectory().createUserAccount("bfd7engine2", "bfd7engine2", fe4_n2, new FireEngineRole());
                
 
            }
