@@ -7,7 +7,7 @@ package LicensePlate;
 
 /**
  *
- * @author Sayali
+ *  
  */
 public class LicensePlate {
     private String licensePlateNumber;

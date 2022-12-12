@@ -29,9 +29,9 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Komal
+ *  
  */
-public class FireDepartmentWorkArea extends javax.swing.JPanel {
+public class FireDepartmentWorkSpace extends javax.swing.JPanel {
 
     /**
      * Creates new form HospitalEnterpriseWorkArea
@@ -43,7 +43,7 @@ public class FireDepartmentWorkArea extends javax.swing.JPanel {
    
     private FireStation firestation;
     private Emergency e;
-    public FireDepartmentWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
+    public FireDepartmentWorkSpace(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.account=account;
@@ -307,7 +307,7 @@ public class FireDepartmentWorkArea extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Ambulance Name", "Status"
+                "Fire truck Name", "Status"
             }
         ) {
             boolean[] canEdit = new boolean [] {

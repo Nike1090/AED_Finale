@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class MedicalEmergency extends Emergency {
     private ArrayList<Description> descriptionList;

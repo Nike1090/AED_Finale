@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class DroneStation {
     private String droneStationName;

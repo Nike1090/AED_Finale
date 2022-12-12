@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Komal
+ *  
  */
 public abstract class Role {
     

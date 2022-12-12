@@ -3,28 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/EmergencySystem/ConfigureASystem.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/UI/FireDepartment/FireEngineWorkArea.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Hospital/Role/FireDepartmentAdminRole.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Employee/EnterpriseAdmin.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Hospital/Role/FireEngineRole.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Hospital/UserAccount/UserAccountDirectory.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/UI/Drone/DroneWorkArea.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/UI/Hospital/AmbulanceWorkArea.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/UI/LoginPage.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/EmergencySystem/Emergency/EmergencyDirectory.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/EmergencySystem/Enterprise/PoliceEnterprise.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/UI/Hospital/HospitalEnterpriseWorkArea.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/DB04/DB4OUtil.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/EmergencySystem/Emergency/Emergency.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Hospital/Role/Emergency911EnterpriseAdminRole.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Hospital/Role/PoliceAdminRole.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/EmergencySystem/Network/Network.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Hospital/Role/AmbulanceRole.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/UI/FireDepartment/FireDepartmentWorkArea.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Hospital/Role/EmergencySystemAdminRole.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/UI/EmergencyManagementSystem/EmergencyManagementSystemWorkArea.java</file>
-            <file>file:/D:/AED-Final-Project-Recue-Management-System-master/RescueManagementSystem/src/Hospital/UserAccount/UserAccount.java</file>
+            <file>file:/C:/Users/nike9/Desktop/finalle/RescueManagementSystem/src/EmergencySystem/ConfigureASystem.java</file>
+            <file>file:/C:/Users/nike9/Desktop/finalle/RescueManagementSystem/src/UI/LoginPage.java</file>
         </group>
     </open-files>
 </project-private>

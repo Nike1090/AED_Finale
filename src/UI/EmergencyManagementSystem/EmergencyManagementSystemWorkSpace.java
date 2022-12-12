@@ -46,9 +46,9 @@ import org.json.JSONObject;
 
 /**
  *
- * @author Sayali
+ *  
  */
-public class EmergencyManagementSystemWorkArea extends javax.swing.JPanel  {
+public class EmergencyManagementSystemWorkSpace extends javax.swing.JPanel  {
 
     /**
      * Creates new form EmergencyManagementSystemWorkArea
@@ -65,7 +65,7 @@ public class EmergencyManagementSystemWorkArea extends javax.swing.JPanel  {
     private boolean entUsernameIsUnique;
    
     private UserAccount userAccount;
-    public EmergencyManagementSystemWorkArea(JPanel userProcessContainer, EmergencySystem system, UserAccount userAccount)
+    public EmergencyManagementSystemWorkSpace(JPanel userProcessContainer, EmergencySystem system, UserAccount userAccount)
     {
         initComponents();
         this.userProcessContainer=userProcessContainer;

@@ -6,13 +6,13 @@
 package EmergencySystem.Emergency;
 
 import Drone.DroneDirectory;
-import Person.Student;
+import Student.Student;
 import java.util.ArrayList;
 import java.util.Date;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class Emergency  {
     
@@ -24,7 +24,7 @@ public class Emergency  {
     private String callersPhoneNumber;
     private String natureOfEmergency;
     private String description;
-    private Student person;
+    private Student student;
     private DroneDirectory droneDirectoryObject;
     private int priority;
     private Date reportedTime;
@@ -55,7 +55,7 @@ public class Emergency  {
     count++;
     emergencyId=count;
     droneDirectoryObject=new DroneDirectory();
-    person=new Student();
+    student=new Student();
     
    
     }
@@ -130,12 +130,12 @@ public class Emergency  {
         this.droneDirectoryObject = droneDirectoryObject;
     }
 
-    public Student getPerson() {
-        return person;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setPerson(Student person) {
-        this.person = person;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
     @Override

@@ -7,7 +7,7 @@ package EmergencySystem.Emergency;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class Description {
     private String name;

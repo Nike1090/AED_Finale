@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class Organisation {
     private String name;

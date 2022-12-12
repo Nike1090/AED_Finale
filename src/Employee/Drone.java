@@ -9,10 +9,10 @@ package Employee;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class Drone extends Employee {
-    private String droneId;
+    private String droneno;
     private String status;
 
     private double speedOfDrone=100;
@@ -24,12 +24,12 @@ public class Drone extends Employee {
 
     }
 
-    public String getDroneId() {
-        return droneId;
+    public String getDroneNo() {
+        return droneno;
     }
 
-    public void setDroneId(String droneId) {
-        this.droneId = droneId;
+    public void setDroneNo(String droneId) {
+        this.droneno = droneId;
     }
 
     public String getStatus() {
@@ -45,7 +45,7 @@ public class Drone extends Employee {
     @Override
     
     public String toString() {
-        return droneId;
+        return droneno;
     }
 
     public double getSpeedOfDrone() {

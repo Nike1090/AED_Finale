@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class LoginPage extends javax.swing.JFrame {
 
@@ -71,7 +71,6 @@ public class LoginPage extends javax.swing.JFrame {
         commonErrorLabel = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        REGISTER = new javax.swing.JButton();
         userProcessContainer = new javax.swing.JPanel();
         panel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -159,15 +158,6 @@ public class LoginPage extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Images/user 24.png"))); // NOI18N
 
-        REGISTER.setBackground(new java.awt.Color(255, 153, 153));
-        REGISTER.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        REGISTER.setText("REGISTER");
-        REGISTER.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                REGISTERActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout loginPanelLayout = new javax.swing.GroupLayout(loginPanel);
         loginPanel.setLayout(loginPanelLayout);
         loginPanelLayout.setHorizontalGroup(
@@ -189,8 +179,7 @@ public class LoginPage extends javax.swing.JFrame {
                                     .addGroup(loginPanelLayout.createSequentialGroup()
                                         .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(REGISTER, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(2, 2, 2))
                                     .addGroup(loginPanelLayout.createSequentialGroup()
                                         .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -248,9 +237,7 @@ public class LoginPage extends javax.swing.JFrame {
                         .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(REGISTER, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         loginPanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {passwordError, usrnameError});
@@ -269,7 +256,7 @@ public class LoginPage extends javax.swing.JFrame {
             .addGroup(initialPanelLayout.createSequentialGroup()
                 .addGap(145, 145, 145)
                 .addComponent(loginPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(230, Short.MAX_VALUE))
+                .addContainerGap(294, Short.MAX_VALUE))
         );
 
         jSplitPane2.setLeftComponent(initialPanel);
@@ -566,10 +553,6 @@ public class LoginPage extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_passwordTFFocusLost
 
-    private void REGISTERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_REGISTERActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_REGISTERActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -607,7 +590,6 @@ public class LoginPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton REGISTER;
     private javax.swing.JLabel commonErrorLabel;
     private javax.swing.JPanel initialPanel;
     private javax.swing.JLabel jLabel1;

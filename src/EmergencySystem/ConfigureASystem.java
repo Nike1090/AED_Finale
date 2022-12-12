@@ -37,12 +37,11 @@ import Hospital.Role.HospitalEnterpriseAdminRole;
 import Hospital.Role.PoliceAdminRole;
 import Hospital.UserAccount.UserAccount;
 import LicensePlate.LicensePlate;
-import Person.Student;
-import UI.FireDepartment.FireEngineWorkArea;
+import Student.Student;
+import UI.FireDepartment.FireEngineWorkSpace;
 
 /**
  *
- * @author Reema
  */
 public class ConfigureASystem {
     public static EmergencySystem configure(){
@@ -66,8 +65,8 @@ public class ConfigureASystem {
         Network n1=system.addNetwork();
         n1.setNetworkName("Northeastern university");
         
-        //Creating person directory
-        Student p1=system.getPersonDirectory().addPerson();
+        //Creating student directory
+        Student p1=system.getStudentDirectory().addStudent();
         p1.setName("Sayali Borse");
         p1.setAge(23);
         p1.setAddress("25 Stephen Street");
@@ -79,7 +78,7 @@ public class ConfigureASystem {
         p1.setPhoto("Images/person1.jpg");
         
         
-        Student p2=system.getPersonDirectory().addPerson();
+        Student p2=system.getStudentDirectory().addStudent();
         p2.setName("Komal Ambekar");
         p2.setAge(27);
         p2.setAddress("615 Parker Street");
@@ -90,7 +89,7 @@ public class ConfigureASystem {
         p2.setEmergencyContactNumber("6319441700");
         p2.setPhoto("Images/person2.jpg");
                 
-        Student p3=system.getPersonDirectory().addPerson();
+        Student p3=system.getStudentDirectory().addStudent();
         p3.setName("Reema Dutta");
         p3.setAge(58);
         p3.setAddress("Babcock Street");
@@ -101,7 +100,7 @@ public class ConfigureASystem {
         p3.setEmergencyContactNumber("6319441700");
         p3.setPhoto("Images/person3.jpg");
         
-        Student p4=system.getPersonDirectory().addPerson();
+        Student p4=system.getStudentDirectory().addStudent();
         p4.setName("Chandler Bing");
         p4.setAge(48);
         p4.setAddress("99 Albion St, Somerville");
@@ -112,7 +111,7 @@ public class ConfigureASystem {
         p4.setEmergencyContactNumber("6319441700");
         p4.setPhoto("Images/person4.jpg");
         
-        Student p5=system.getPersonDirectory().addPerson();
+        Student p5=system.getStudentDirectory().addStudent();
         p5.setName("Angelina Jolie");
         p5.setAge(28);
         p5.setAddress("20 Reservoir Rd, Quincy");
@@ -123,7 +122,7 @@ public class ConfigureASystem {
         p5.setEmergencyContactNumber("6319441700");
         p5.setPhoto("Images/person5.jpg");
         
-        Student p6=system.getPersonDirectory().addPerson();
+        Student p6=system.getStudentDirectory().addStudent();
         p6.setName("Hugh Jackman");
         p6.setAge(32);
         p6.setAddress("1037 Southern Artery, Quincy");
@@ -132,7 +131,7 @@ public class ConfigureASystem {
         p6.setLicensePlateNumber("PL2020");
         p6.setPhoneNumber("6718799965");
         p6.setEmergencyContactNumber("6319441700");
-        p6.setPhoto("Images/person6.jpg");
+        p6.setPhoto("Images/student6.jpg");
         
         
         //Creating licenseplate directory
@@ -578,7 +577,7 @@ public class ConfigureASystem {
         
         //adding drones to drone station
         Drone d1n1=new Drone();
-        d1n1.setDroneId("Drone_Boston100");
+        d1n1.setDroneNo("Drone_Boston100");
         d1n1.setStatus("Active");
         bostonDroneStation1.addDrone(d1n1);
        
@@ -587,7 +586,7 @@ public class ConfigureASystem {
       
 
         Drone d2n1= new Drone();
-        d2n1.setDroneId("Drone_Boston200");
+        d2n1.setDroneNo("Drone_Boston200");
         d2n1.setStatus("Assigned");
         bostonDroneStation1.addDrone(d2n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d2n1);
@@ -595,7 +594,7 @@ public class ConfigureASystem {
       
         
         Drone d3n1= new Drone();
-        d3n1.setDroneId("Drone_Boston300");
+        d3n1.setDroneNo("Drone_Boston300");
         d3n1.setStatus("Active");
         bostonDroneStation1.addDrone(d3n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d3n1);
@@ -603,7 +602,7 @@ public class ConfigureASystem {
       
         
         Drone d4n1= new Drone();
-        d4n1.setDroneId("Drone_Boston400");
+        d4n1.setDroneNo("Drone_Boston400");
         d4n1.setStatus("Assigned");
         bostonDroneStation1.addDrone(d4n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d4n1);
@@ -611,7 +610,7 @@ public class ConfigureASystem {
       
         
         Drone d5n1=new Drone();
-        d5n1.setDroneId("Drone_Boston500");
+        d5n1.setDroneNo("Drone_Boston500");
         d5n1.setStatus("Active");
         bostonDroneStation1.addDrone(d5n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d5n1);
@@ -620,14 +619,14 @@ public class ConfigureASystem {
        
         Drone d6n1=new Drone();
               
-        d6n1.setDroneId("Drone_Boston600");
+        d6n1.setDroneNo("Drone_Boston600");
         d6n1.setStatus("Active");
         bostonDroneStation2.addDrone(d6n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d6n1);
         droneOrg_n1.getUserAccountDirectory().createUserAccount("dronebos600", "dronebos600", d6n1, new DroneRole() );
       
         Drone d7n1=new Drone();
-        d7n1.setDroneId("Drone_Boston700");
+        d7n1.setDroneNo("Drone_Boston700");
         d7n1.setStatus("Active");
         bostonDroneStation2.addDrone(d7n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d7n1);
@@ -636,7 +635,7 @@ public class ConfigureASystem {
         
         
         Drone d8n1= new Drone();
-        d8n1.setDroneId("Drone_Boston800");
+        d8n1.setDroneNo("Drone_Boston800");
         d8n1.setStatus("Active");
         bostonDroneStation2.addDrone(d8n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d8n1);
@@ -645,7 +644,7 @@ public class ConfigureASystem {
         
         
         Drone d9n1=new Drone();
-        d9n1.setDroneId("Drone_Boston900");
+        d9n1.setDroneNo("Drone_Boston900");
         d9n1.setStatus("Active");
         bostonDroneStation3.addDrone(d9n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d9n1);
@@ -653,7 +652,7 @@ public class ConfigureASystem {
       
         
         Drone d10n1= new Drone();
-        d10n1.setDroneId("Drone_Boston1000");
+        d10n1.setDroneNo("Drone_Boston1000");
         d10n1.setStatus("Active");
         bostonDroneStation3.addDrone(d10n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d10n1);
@@ -661,7 +660,7 @@ public class ConfigureASystem {
       
         
         Drone d11n1= new Drone();
-        d11n1.setDroneId("Drone_Boston1100");
+        d11n1.setDroneNo("Drone_Boston1100");
         d11n1.setStatus("Active");
         bostonDroneStation3.addDrone(d11n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d11n1);
@@ -669,7 +668,7 @@ public class ConfigureASystem {
       
       
         Drone d12n1= new Drone();
-        d12n1.setDroneId("Drone_Boston1200");
+        d12n1.setDroneNo("Drone_Boston1200");
         d12n1.setStatus("Active");
         bostonDroneStation3.addDrone(d12n1);
         droneOrg_n1.getEmployeeDirectory().createEmployee(d12n1);
@@ -1009,7 +1008,7 @@ public class ConfigureASystem {
         //adding drones to cambridge drone station
         Drone d1n2=new Drone();
         
-        d1n2.setDroneId("Drone_Cambrideg100");
+        d1n2.setDroneNo("Drone_Cambrideg100");
         d1n2.setStatus("Active");
         cambridgeDroneStation1.addDrone(d1n2);
         droneOrg_n2.getEmployeeDirectory().createEmployee(d1n2);
@@ -1017,7 +1016,7 @@ public class ConfigureASystem {
      
         
         Drone d2n2= new Drone();
-        d2n2.setDroneId("Drone_Cambridge200");
+        d2n2.setDroneNo("Drone_Cambridge200");
         d2n2.setStatus("Active");
         cambridgeDroneStation1.addDrone(d2n2);
         droneOrg_n2.getEmployeeDirectory().createEmployee(d2n2);
@@ -1025,7 +1024,7 @@ public class ConfigureASystem {
      
         
         Drone d3n2= new Drone();
-        d3n2.setDroneId("Drone_Cambridge300");
+        d3n2.setDroneNo("Drone_Cambridge300");
         d3n2.setStatus("Active");
          cambridgeDroneStation1.addDrone(d3n2);
         droneOrg_n2.getEmployeeDirectory().createEmployee(d3n2);
@@ -1033,7 +1032,7 @@ public class ConfigureASystem {
      
         
         Drone d4n2=new Drone();
-        d4n2.setDroneId("Drone_Cambridge400");
+        d4n2.setDroneNo("Drone_Cambridge400");
         d4n2.setStatus("Active");
         cambridgeDroneStation1.addDrone(d4n2);
         droneOrg_n2.getEmployeeDirectory().createEmployee(d4n2);
@@ -1041,7 +1040,7 @@ public class ConfigureASystem {
      
         
         Drone d5n2= new Drone();
-        d5n2.setDroneId("Drone_Cambridge500");
+        d5n2.setDroneNo("Drone_Cambridge500");
         d5n2.setStatus("Active");
         cambridgeDroneStation1.addDrone(d5n2);
         droneOrg_n2.getEmployeeDirectory().createEmployee(d5n2);
@@ -1231,7 +1230,7 @@ public class ConfigureASystem {
          
         //adding drones to malden drone station
         Drone d1n3=new Drone();     
-        d1n3.setDroneId("Drone_Malden100");
+        d1n3.setDroneNo("Drone_Malden100");
         d1n3.setStatus("Active");
         maldenDroneStation1.addDrone(d1n3);
         droneOrg_n3.getEmployeeDirectory().createEmployee(d1n3);
@@ -1239,7 +1238,7 @@ public class ConfigureASystem {
      
         
         Drone d2n3= new Drone();
-        d2n3.setDroneId("Drone_Malden200");
+        d2n3.setDroneNo("Drone_Malden200");
         d2n3.setStatus("Active");
         maldenDroneStation1.addDrone(d2n3);
         droneOrg_n3.getEmployeeDirectory().createEmployee(d2n3);
@@ -1247,7 +1246,7 @@ public class ConfigureASystem {
      
         
         Drone d3n3= new Drone();
-        d3n3.setDroneId("Drone_Malden300");
+        d3n3.setDroneNo("Drone_Malden300");
         d3n3.setStatus("Active");
         maldenDroneStation1.addDrone(d1n3);
         droneOrg_n3.getEmployeeDirectory().createEmployee(d3n3);
@@ -1256,7 +1255,7 @@ public class ConfigureASystem {
         
         
         Drone d4n3= new Drone();
-        d4n3.setDroneId("Drone_Malden400");
+        d4n3.setDroneNo("Drone_Malden400");
         d4n3.setStatus("Active");
         maldenDroneStation1.addDrone(d4n3);
         droneOrg_n3.getEmployeeDirectory().createEmployee(d4n3);
@@ -1264,7 +1263,7 @@ public class ConfigureASystem {
      
         
         Drone d5n3= new Drone();
-        d5n3.setDroneId("Drone_Malden500");
+        d5n3.setDroneNo("Drone_Malden500");
         d5n3.setStatus("Active");
         maldenDroneStation1.addDrone(d5n3);
         droneOrg_n3.getEmployeeDirectory().createEmployee(d5n3);

@@ -7,7 +7,7 @@ package Employee;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class Doctor extends Employee {
     private boolean doctorsAvailablityStatus;

@@ -12,7 +12,7 @@ import EmergencySystem.Network.Network;
 import Hospital.UserAccount.UserAccount;
 import Hospital.WorkQueue.Emergency911DepartmentWorkRequest;
 import Hospital.WorkQueue.WorkRequest;
-import Person.Student;
+import Student.Student;
 /*import com.googlecode.javacv.CanvasFrame;
 import com.googlecode.javacv.cpp.opencv_core;
 import static com.googlecode.javacv.cpp.opencv_highgui.cvLoadImage;*/
@@ -25,9 +25,9 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Komal
+ *  
  */
-public class PoliceAdminWorkArea extends javax.swing.JPanel {
+public class PoliceAdminWorkSpace extends javax.swing.JPanel {
 
     /**
      * Creates new form PoliceAdminWorkArea
@@ -38,7 +38,7 @@ public class PoliceAdminWorkArea extends javax.swing.JPanel {
     Network network;
     Enterprise enterprise;
     private boolean manageFields=false;
-    public PoliceAdminWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
+    public PoliceAdminWorkSpace(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.account=account;
@@ -401,7 +401,7 @@ public class PoliceAdminWorkArea extends javax.swing.JPanel {
        
         String licensePlateNumber=licensePlateNumberTF.getText();
         boolean status=false;
-        for(Student p:system.getPersonDirectory().getPersonList())
+        for(Student p:system.getStudentDirectory().getStudentList())
         {
             if(p.getLicensePlateNumber().equalsIgnoreCase(licensePlateNumber))
             {

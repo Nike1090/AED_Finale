@@ -23,9 +23,9 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Komal
+ *  
  */
-public class DoctorWorkArea extends javax.swing.JPanel {
+public class DoctorWorkSpace extends javax.swing.JPanel {
 
     /**
      * Creates new form DoctorWorkArea
@@ -36,7 +36,7 @@ public class DoctorWorkArea extends javax.swing.JPanel {
     private Network network;
     private Enterprise enterprise;
     
-    public DoctorWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
+    public DoctorWorkSpace(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.account=account;
@@ -114,7 +114,7 @@ public class DoctorWorkArea extends javax.swing.JPanel {
         }
 
         connectToPatientBtn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        connectToPatientBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Hospital/images/1449794157_video-camera.png"))); // NOI18N
+        connectToPatientBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Hospital/images/record.png"))); // NOI18N
         connectToPatientBtn.setText("Connect to the patient");
         connectToPatientBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

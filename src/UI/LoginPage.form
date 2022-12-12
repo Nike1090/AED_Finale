@@ -68,7 +68,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
                       <Component id="loginPanel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="230" max="32767" attributes="0"/>
+                      <EmptySpace pref="294" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -107,7 +107,6 @@
                                                   <Group type="103" groupAlignment="1" attributes="0">
                                                       <Component id="logoutBtn" linkSize="1" min="-2" pref="140" max="-2" attributes="0"/>
                                                       <Component id="loginBtn" linkSize="1" min="-2" pref="140" max="-2" attributes="0"/>
-                                                      <Component id="REGISTER" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                                               </Group>
@@ -184,9 +183,7 @@
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="logoutBtn" min="-2" pref="40" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="REGISTER" min="-2" pref="40" max="-2" attributes="0"/>
-                          <EmptySpace pref="31" max="32767" attributes="0"/>
+                          <EmptySpace pref="19" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -311,20 +308,6 @@
                       <Image iconType="3" name="/UI/Images/user 24.png"/>
                     </Property>
                   </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="REGISTER">
-                  <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="ff" type="rgb"/>
-                    </Property>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="3"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="REGISTER"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="REGISTERActionPerformed"/>
-                  </Events>
                 </Component>
               </SubComponents>
             </Container>

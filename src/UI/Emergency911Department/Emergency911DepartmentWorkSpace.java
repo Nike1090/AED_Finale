@@ -35,9 +35,9 @@ import org.json.JSONObject;
 
 /**
  *
- * @author Reema
+ *  
  */
-public class Emergency911DepartmentWorkArea extends javax.swing.JPanel {
+public class Emergency911DepartmentWorkSpace extends javax.swing.JPanel {
 
     /**
      * Creates new form Emergency911DepartmentWorkArea
@@ -58,7 +58,7 @@ public class Emergency911DepartmentWorkArea extends javax.swing.JPanel {
         
     private boolean droneHasUserName;
    
-    public Emergency911DepartmentWorkArea(JPanel userProcessContainer,UserAccount account, EmergencySystem emergencysystem, Network network, Enterprise enterprise) {
+    public Emergency911DepartmentWorkSpace(JPanel userProcessContainer,UserAccount account, EmergencySystem emergencysystem, Network network, Enterprise enterprise) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.emergencysystem=emergencysystem;
@@ -1503,7 +1503,7 @@ public class Emergency911DepartmentWorkArea extends javax.swing.JPanel {
                 {
                    for(Drone d:ds.getDroneList())
                    {
-                       if(d.getDroneId().equalsIgnoreCase(droneIdTF.getText()))
+                       if(d.getDroneNo().equalsIgnoreCase(droneIdTF.getText()))
                        {
                            droneIdAlreadyPresent=true;
                            break;
@@ -1519,7 +1519,7 @@ public class Emergency911DepartmentWorkArea extends javax.swing.JPanel {
                 {
                      DroneStation ds=(DroneStation) droneStnCombo.getSelectedItem();
                      Drone d=new Drone();
-                     d.setDroneId(droneIdTF.getText().trim());
+                     d.setDroneNo(droneIdTF.getText().trim());
                      d.setStatus("Active");
                      ds.addDrone(d);
                      JOptionPane.showMessageDialog(this,"The drone has been added to the drone station successfully");

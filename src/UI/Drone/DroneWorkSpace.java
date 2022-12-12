@@ -38,9 +38,9 @@ import org.json.JSONObject;
 
 /**
  *
- * @author Reema
+ *  
  */
-public class DroneWorkArea extends javax.swing.JPanel {
+public class DroneWorkSpace extends javax.swing.JPanel {
 
     /**
      * Creates new form DroneWorkArea
@@ -53,7 +53,7 @@ public class DroneWorkArea extends javax.swing.JPanel {
     private WorkRequest request;
     private boolean view=false;
     private boolean licenPlateCaptured=false;
-    public DroneWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network) {
+    public DroneWorkSpace(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.account=account;
@@ -380,13 +380,14 @@ public class DroneWorkArea extends javax.swing.JPanel {
      
         if(row>=0 && emergencyTable.getValueAt(row, 3).equals("Fire Emergency"))
         {
+            JOptionPane.showMessageDialog(this,"Select an Fire emergency");
             emergency=(Emergency) emergencyTable.getValueAt(row,1);
           //  System.out.println("the emeregncy location is"+emergency.getLocationOfEmergency());
 
         }
         else
         {
-            JOptionPane.showMessageDialog(this,"Select an Fire emergency");
+            
         }
         int count=network.getFireStationList().size();
         
@@ -698,7 +699,6 @@ public class DroneWorkArea extends javax.swing.JPanel {
         jPanel7 = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
         FireStationTable = new javax.swing.JTable();
-        viewDetailsButtonFireStation = new javax.swing.JButton();
         alertFireStationBtn = new javax.swing.JButton();
         networkComboFireStation = new javax.swing.JComboBox();
         additionalDetailsTable3 = new javax.swing.JScrollPane();
@@ -976,15 +976,6 @@ public class DroneWorkArea extends javax.swing.JPanel {
         });
         jScrollPane10.setViewportView(FireStationTable);
 
-        viewDetailsButtonFireStation.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        viewDetailsButtonFireStation.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Drone/Images/moreDetails.png"))); // NOI18N
-        viewDetailsButtonFireStation.setText("View additional details");
-        viewDetailsButtonFireStation.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                viewDetailsButtonFireStationActionPerformed(evt);
-            }
-        });
-
         alertFireStationBtn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         alertFireStationBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Drone/Images/hospital.png"))); // NOI18N
         alertFireStationBtn.setText("Alert the FireStation");
@@ -1054,10 +1045,6 @@ public class DroneWorkArea extends javax.swing.JPanel {
                     .addComponent(networkComboFireStation, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(alertFireStationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(262, 262, 262))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(viewDetailsButtonFireStation, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(239, 239, 239))
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel7Layout.createSequentialGroup()
@@ -1077,9 +1064,7 @@ public class DroneWorkArea extends javax.swing.JPanel {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(viewDetailsButtonFireStation, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(60, 60, 60)
                 .addComponent(additionalDetailsTable3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(alertFireStationBtn)
@@ -2819,21 +2804,6 @@ public class DroneWorkArea extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_alertPoliceBtnActionPerformed
 
-    private void viewDetailsButtonFireStationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDetailsButtonFireStationActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_viewDetailsButtonFireStationActionPerformed
-
-    private void networkComboFireStationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkComboFireStationActionPerformed
-      // TODO add your handling code here:'  
-      Network n=(Network) networkCombo.getSelectedItem();
-        
-       if(n!=null)
-       {
-        populateHospitalTableForTheNetwork(n);
-       }
-        otherHospitalsTable.removeAll();
-    }//GEN-LAST:event_networkComboFireStationActionPerformed
-
     private void alertFireStationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alertFireStationBtnActionPerformed
         // TODO add your handling code here:
         
@@ -2916,6 +2886,17 @@ public class DroneWorkArea extends javax.swing.JPanel {
         
     }//GEN-LAST:event_alertFireStationBtnActionPerformed
 
+    private void networkComboFireStationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkComboFireStationActionPerformed
+        // TODO add your handling code here:'
+        Network n=(Network) networkCombo.getSelectedItem();
+
+        if(n!=null)
+        {
+            populateHospitalTableForTheNetwork(n);
+        }
+        otherHospitalsTable.removeAll();
+    }//GEN-LAST:event_networkComboFireStationActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable FireStationTable;
@@ -2948,6 +2929,5 @@ public class DroneWorkArea extends javax.swing.JPanel {
     private javax.swing.JTable otherHospitalsTable;
     private javax.swing.JButton processBtn;
     private javax.swing.JButton viewDetailsButton;
-    private javax.swing.JButton viewDetailsButtonFireStation;
     // End of variables declaration//GEN-END:variables
 }

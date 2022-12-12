@@ -7,7 +7,7 @@ package Employee;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class Ambulance extends Employee {
     private String availability;

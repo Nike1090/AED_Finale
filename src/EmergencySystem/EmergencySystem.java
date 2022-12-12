@@ -12,18 +12,18 @@ import EmergencySystem.Network.Network;
 import Hospital.Hospital;
 import Hospital.Organisation.Organisation;
 import LicensePlate.LicensePlateDirectory;
-import Person.StudentDirectory;
+import Student.StudentDirectory;
 import java.util.ArrayList;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class EmergencySystem extends Organisation{
    private ArrayList<Network> networkList;
    private EmergencyDirectory emergencyDirectory;
    private EmergencyAddressLocationDirectory directory;
-   private StudentDirectory personDirectory;
+   private StudentDirectory studentDirectory;
    private LicensePlateDirectory licensePlateDir;
 
     public static EmergencySystem getEmergencySystem() {
@@ -56,7 +56,7 @@ public class EmergencySystem extends Organisation{
         
         networkList=new ArrayList<>();
         directory=new EmergencyAddressLocationDirectory();
-        personDirectory=new StudentDirectory();
+        studentDirectory=new StudentDirectory();
         licensePlateDir=new LicensePlateDirectory();
         emergencyDirectory=new EmergencyDirectory();
     }
@@ -87,12 +87,12 @@ public class EmergencySystem extends Organisation{
         this.directory = directory;
     }
 
-    public StudentDirectory getPersonDirectory() {
-        return personDirectory;
+    public StudentDirectory getStudentDirectory() {
+        return studentDirectory;
     }
 
-    public void setPersonDirectory(StudentDirectory personDirectory) {
-        this.personDirectory = personDirectory;
+    public void setStudentDirectory(StudentDirectory studentDirectory) {
+        this.studentDirectory = studentDirectory;
     }
 
     public LicensePlateDirectory getLicensePlateDir() {

@@ -7,7 +7,7 @@ package Hospital.Role;
 import EmergencySystem.EmergencySystem;
 import EmergencySystem.Enterprise.Enterprise;
 import EmergencySystem.Network.Network;
-import UI.FireDepartment.FireEngineWorkArea;
+import UI.FireDepartment.FireEngineWorkSpace;
 import Hospital.UserAccount.UserAccount;
 import javax.swing.JPanel;
 
@@ -20,7 +20,7 @@ public class FireEngineRole extends Role {
     
         @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
-        return new FireEngineWorkArea( userProcessContainer,  account,  system,  network,  enterprise);
+        return new FireEngineWorkSpace( userProcessContainer,  account,  system,  network,  enterprise);
     
 }
 }

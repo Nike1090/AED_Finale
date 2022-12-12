@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class EmergencyAddressLocationDirectory {
       private ArrayList<EmergencyAddressLocation> emergencyAddressLocationList;

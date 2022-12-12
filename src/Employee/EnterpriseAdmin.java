@@ -5,13 +5,13 @@
  */
 package Employee;
 
-import Person.StudentDirectory;
+import Student.StudentDirectory;
 
 
 
 /**
  *
- * @author Reema
+ *  
  */
 public class EnterpriseAdmin extends Employee {
     

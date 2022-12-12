@@ -118,7 +118,7 @@
           <Font name="Tahoma" size="11" style="1"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/UI/Hospital/images/1449794157_video-camera.png"/>
+          <Image iconType="3" name="/UI/Hospital/images/record.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Connect to the patient"/>
       </Properties>

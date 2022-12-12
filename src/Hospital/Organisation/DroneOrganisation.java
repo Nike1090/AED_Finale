@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Reema
+ *  
  */
 public class DroneOrganisation extends Organisation{
     private DroneDirectory droneDirectoryObject;

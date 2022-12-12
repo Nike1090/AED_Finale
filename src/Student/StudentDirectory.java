@@ -3,34 +3,34 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Person;
+package Student;
 
 import java.util.ArrayList;
 
 /**
  *
- * @author Sayali
+ *  
  */
 public class StudentDirectory {
-    private ArrayList<Student> personList;
+    private ArrayList<Student> studentList;
     
     public StudentDirectory()
     {
-        personList=new ArrayList<Student>();
+        studentList=new ArrayList<Student>();
     }
 
-    public ArrayList<Student> getPersonList() {
-        return personList;
+    public ArrayList<Student> getStudentList() {
+        return studentList;
     }
 
-    public void setPersonList(ArrayList<Student> personList) {
-        this.personList = personList;
+    public void setStudentList(ArrayList<Student> studentList) {
+        this.studentList = studentList;
     }
     
-    public Student addPerson()
+    public Student addStudent()
     {
         Student p=new Student();
-        personList.add(p);
+        studentList.add(p);
         return p;
     }
     

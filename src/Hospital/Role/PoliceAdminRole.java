@@ -9,19 +9,19 @@ import EmergencySystem.EmergencySystem;
 import EmergencySystem.Enterprise.Enterprise;
 import EmergencySystem.Network.Network;
 import Hospital.UserAccount.UserAccount;
-import UI.Police.PoliceAdminWorkArea;
+import UI.Police.PoliceAdminWorkSpace;
 import javax.swing.JPanel;
 
 /**
  *
- * @author Komal
+ *  
  */
 public class PoliceAdminRole extends Role
 {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
-       return new PoliceAdminWorkArea (userProcessContainer, account, system, network, enterprise);
+       return new PoliceAdminWorkSpace (userProcessContainer, account, system, network, enterprise);
     }
     
 }

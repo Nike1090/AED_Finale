@@ -29,9 +29,9 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Komal
+ *  
  */
-public class HospitalEnterpriseWorkArea extends javax.swing.JPanel {
+public class HospitalEnterpriseWorkSpace extends javax.swing.JPanel {
 
     /**
      * Creates new form HospitalEnterpriseWorkArea
@@ -43,7 +43,7 @@ public class HospitalEnterpriseWorkArea extends javax.swing.JPanel {
    
     private Hospital hospital;
     private Emergency e;
-    public HospitalEnterpriseWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
+    public HospitalEnterpriseWorkSpace(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.account=account;

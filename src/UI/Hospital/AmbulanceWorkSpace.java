@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UI.FireDepartment;
+package UI.Hospital;
 
 import EmergencySystem.Emergency.Emergency;
 import EmergencySystem.EmergencySystem;
 import EmergencySystem.Enterprise.Enterprise;
 import EmergencySystem.Network.Network;
-import FireStation.FireStation;
 import Hospital.Hospital;
 import Hospital.UserAccount.UserAccount;
 import Hospital.WorkQueue.Emergency911DepartmentWorkRequest;
@@ -25,9 +24,9 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Komal
+ *  
  */
-public class FireEngineWorkArea extends javax.swing.JPanel {
+public class AmbulanceWorkSpace extends javax.swing.JPanel {
 
     /**
      * Creates new form AmbulanceWorkArea
@@ -37,14 +36,14 @@ public class FireEngineWorkArea extends javax.swing.JPanel {
     private EmergencySystem system;
     private Network network;
     private Emergency emergency;
-    private FireStation fireStation;
-    public FireEngineWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
+    private Hospital hospital;
+    public AmbulanceWorkSpace(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network, Enterprise enterprise) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.account=account;
         this.system=system;
         this.network=network;
-        this.fireStation=(FireStation)enterprise;
+        this.hospital=(Hospital)enterprise;
         populateWorkRequestTable();
             
         
@@ -64,7 +63,7 @@ public class FireEngineWorkArea extends javax.swing.JPanel {
             row[0]=  ((Emergency911DepartmentWorkRequest) workRequest);
             row[1]=  ((Emergency911DepartmentWorkRequest) workRequest).getEmergency();
             
-            row[2] = fireStation.getTimeTakenToReachTheAccidentLoc();
+            row[2] = hospital.getTimeTakenToReachTheAccidentLoc();
             row[3] = ((Emergency911DepartmentWorkRequest) workRequest).getEmergency().getDescription();
            
             model.addRow(row);
@@ -89,7 +88,7 @@ public class FireEngineWorkArea extends javax.swing.JPanel {
         setBackground(new java.awt.Color(102, 255, 204));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setText("FireEngine Work Area");
+        jLabel1.setText("Ambulance Work Area");
 
         emergencyTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -128,7 +127,7 @@ public class FireEngineWorkArea extends javax.swing.JPanel {
         }
 
         startJourneyBtn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        startJourneyBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UserInterface/Hospital/images/journey.png"))); // NOI18N
+        startJourneyBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Hospital/images/journey.png"))); // NOI18N
         startJourneyBtn.setText("Start the journey");
         startJourneyBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,12 +171,12 @@ public class FireEngineWorkArea extends javax.swing.JPanel {
         if(rowSelected>=0)
         {
             emergency=(Emergency) emergencyTable.getValueAt(rowSelected, 1);
-            emergency.setEmergencyStatus("FireEngine proceeding towards the location");
+            emergency.setEmergencyStatus("Ambulance proceeding towards the location");
 //            emergency.setTimeForTheAmbulanceToReachTheAccidentalLocation(hospital.getTimeTakenToReachTheAccidentLoc());
 //            Date d=new Date();
 //            emergency.setReolvedTime(d);
 //            emergency.setTotalTime((emergency.getReolvedTime().getTime()-emergency.getReportedTime().getTime())/1000%60);
-            JOptionPane.showMessageDialog(this, "The FireEngine has been departed and will reach the destination in approximately 15 minutes");
+            JOptionPane.showMessageDialog(this, "The ambulance has been departed and will reach the destination in approximately 15 minutes");
         }
         
         else

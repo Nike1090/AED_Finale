@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Sayali
+ *  
  */
 public class LicensePlateDirectory {
     private ArrayList<LicensePlate> licensePlateList;

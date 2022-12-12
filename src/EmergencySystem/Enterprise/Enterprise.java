@@ -11,7 +11,7 @@ import Hospital.Organisation.OrganisationDirectory;
 
 /**
  *
- * @author Reema
+ *  
  */
 public abstract class Enterprise extends Organisation{
 

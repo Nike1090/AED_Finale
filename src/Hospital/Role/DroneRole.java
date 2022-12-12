@@ -9,19 +9,19 @@ import EmergencySystem.EmergencySystem;
 import EmergencySystem.Enterprise.Enterprise;
 import EmergencySystem.Network.Network;
 import Hospital.UserAccount.UserAccount;
-import UI.Drone.DroneWorkArea;
+import UI.Drone.DroneWorkSpace;
 import javax.swing.JPanel;
 
 /**
  *
- * @author Komal
+ *  
  */
 public class DroneRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EmergencySystem system, Network network,Enterprise enterprise) {
      
-        return new DroneWorkArea(userProcessContainer,account,system,network);
+        return new DroneWorkSpace(userProcessContainer,account,system,network);
         
     }
     
