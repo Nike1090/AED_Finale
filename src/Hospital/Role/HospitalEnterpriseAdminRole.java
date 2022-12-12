@@ -9,7 +9,7 @@ import EmergencySystem.EmergencySystem;
 import EmergencySystem.Enterprise.Enterprise;
 import EmergencySystem.Network.Network;
 import Hospital.UserAccount.UserAccount;
-import UserInterface.Hospital.HospitalEnterpriseWorkArea;
+import UI.Hospital.HospitalEnterpriseWorkArea;
 import javax.swing.JPanel;
 
 /**
